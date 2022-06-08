@@ -11,6 +11,7 @@ app.get("/", (req, res) => {
   return res.send("Api is running");
 });
 
+
 app.post("/product", novoProduto.create);
 
 app.listen(3333, () => {

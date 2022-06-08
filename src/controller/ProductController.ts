@@ -21,4 +21,23 @@ export class CreateProductController {
 
         return res.json(product);
     }
+
+    //fazer a funcao de listar
+    async list(req: Request, res: Response) {
+        //todo: to make a parser to receive the body
+
+        // const product = await Product.create({
+        //     nome,
+        //     preco,
+        //     estoque
+        // });
+
+        // const product = new Product();
+        // product.nome = nome;
+        // product.preco = preco;
+        // product.estoque = estoque;
+        // await product.save();
+
+        // return res.json(product);
+    }
 }
