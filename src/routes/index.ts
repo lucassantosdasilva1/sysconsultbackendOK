@@ -1,14 +1,16 @@
-// import express from 'express';
-// import { CreateProductController } from '../controller/ProductController';
 import { Router } from "express";
+import { ProductController } from "../controller/ProductController";
 
+export const router = Router();
 
-// const app = express();
+const novoProduto = new ProductController();
 
-// const novoProduto = new CreateProductController();
+router.get("/product", novoProduto.list);
 
-// app.post("/product", novoProduto.create);
- 
-//  app.listen(3333, () => {
-//      console.log("Server is running")
-//  });
+router.get("/product/:id", novoProduto.listById);
+
+router.post("/product", novoProduto.create);
+
+router.delete("/product/:id", novoProduto.delete);
+
+router.put("/product/:id", novoProduto.update);
