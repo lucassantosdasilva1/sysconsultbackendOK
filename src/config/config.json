@@ -1,5 +1,12 @@
 {
   "development": {
+    "username": "mjaptvlf",
+    "password": "8sFuzL2qXzBvbnPSHiXmDQqAD4vFWP0G",
+    "database": "mjaptvlf",
+    "host": "heffalump.db.elephantsql.com",
+    "dialect": "postgres"
+  },
+  "development2": {
     "username": "postgres",
     "password": "admin",
     "database": "sysconsultdb",
